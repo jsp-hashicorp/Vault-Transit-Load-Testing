@@ -1,0 +1,7 @@
+
+-- example HTTP POST script which demonstrates setting the
+-- HTTP method, body, and adding a header
+
+wrk.method = "POST"
+wrk.body   = '{"batch_input": [{"value": "4813-8219-1769-1940","transformation": "card-number"},{"value": "8448-5456-4410-7350","transformation": "card-number"},{"value": "1403-9027-3303-5710","transformation": "card-number"},{"value": "6629-0187-2625-7390","transformation": "card-number"},{"value": "2076-1310-3532-6230","transformation": "card-number"},{"value": "9891-8763-3772-1720","transformation": "card-number"},{"value": "3133-3120-2699-1980","transformation": "card-number"},{"value": "7996-9392-3404-0710","transformation": "card-number"},{"value": "6822-9086-2095-5200","transformation": "card-number"},{"value": "6344-3216-8035-0940","transformation": "card-number"},{"value": "5196-1476-2632-2280","transformation": "card-number"},{"value": "6925-4534-5212-6790","transformation": "card-number"},{"value": "7215-6719-9653-3930","transformation": "card-number"},{"value": "3967-7501-0643-0130","transformation": "card-number"},{"value": "5968-6070-1347-5990","transformation": "card-number"},{"value": "1729-1430-9978-8700","transformation": "card-number"},{"value": "3628-5893-7030-7250","transformation": "card-number"},{"value": "4558-9137-8658-7920","transformation": "card-number"},{"value": "5229-4279-1869-3340","transformation": "card-number"},{"value": "5210-9295-3454-3880","transformation": "card-number"}]}'
+wrk.headers["Content-Type"] = "application/json"
